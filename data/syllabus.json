@@ -1,0 +1,395 @@
+{
+  "title": "Learn AI",
+  "subtitle": "Six short lessons that explain how smart machines actually work — and how to stay safe and sharp around them.",
+  "lessons": [
+    {
+      "id": "what-is-ai",
+      "n": 1,
+      "title": "What is AI, really?",
+      "emoji": "🤖",
+      "minutes": 5,
+      "bigIdea": "AI is a computer program that spots patterns in examples and uses them to make a guess.",
+      "body": [
+        "AI stands for artificial intelligence. It sounds like a robot with a brain, but it is really a very fast pattern spotter. You give it thousands of examples, and it works out what they have in common.",
+        "Think about how you learned to recognise a dog. Nobody gave you a rule book. You saw dogs, your brain collected the pattern — four legs, waggy tail, wet nose — and now you spot one instantly. AI learns in a similar way, except it needs far more examples than you do.",
+        "You already use AI more than you think. When your phone suggests the next word as you type, that is AI. When a video app guesses which clip you will watch next, that is AI. When a game's computer opponent chases you around the map, that is AI too.",
+        "The important bit: AI does not understand anything. It has no idea what a dog is. It only knows that these shapes usually go together. That is why it can be brilliant one moment and completely wrong the next."
+      ],
+      "words": [
+        {
+          "term": "AI",
+          "meaning": "A computer program that learns patterns from examples instead of following rules written by a person."
+        },
+        {
+          "term": "Pattern",
+          "meaning": "Something that repeats or keeps appearing in the same way."
+        },
+        {
+          "term": "Model",
+          "meaning": "The pattern-spotting machine that is left after training. It is what you actually use."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "How does an AI mostly learn?",
+          "options": [
+            "From lots of examples",
+            "By reading a rule book a person wrote",
+            "By guessing randomly forever",
+            "By asking another AI"
+          ],
+          "answer": 0,
+          "why": "AI is trained on examples. It finds the patterns itself rather than following hand-written rules."
+        },
+        {
+          "q": "Does AI understand what it is talking about?",
+          "options": [
+            "Yes, exactly like a person",
+            "No, it only matches patterns",
+            "Only when it is online",
+            "Only for maths"
+          ],
+          "answer": 1,
+          "why": "It predicts what usually comes next. There is no understanding behind it, which is why mistakes happen."
+        },
+        {
+          "q": "Which one of these is NOT AI?",
+          "options": [
+            "A phone guessing your next word",
+            "A video app picking your next clip",
+            "A calculator adding 2 + 2",
+            "A game enemy chasing you"
+          ],
+          "answer": 2,
+          "why": "A calculator follows one fixed rule every time. There is no learning and no guessing involved."
+        }
+      ]
+    },
+    {
+      "id": "how-it-learns",
+      "n": 2,
+      "title": "How AI learns",
+      "emoji": "🧠",
+      "minutes": 6,
+      "bigIdea": "Training is guess, check, adjust — repeated millions of times.",
+      "body": [
+        "Training an AI happens in three steps, over and over. First the model makes a guess. Then it is told the right answer. Then it nudges itself a tiny bit so the next guess is closer.",
+        "Do that a few million times and the model gets surprisingly good. Nobody programmed the answers in. The model found them.",
+        "There is a catch. The model only gets good at the kind of examples it was trained on. Teach it with photos of dogs in daylight and it may struggle with a dog at night. This is called being narrow — good at one thing, blind to everything else.",
+        "It also means an AI can be confidently wrong. A wrong answer and a right answer both feel the same to it, because it has no way of knowing which is which. It is always guessing, just very well."
+      ],
+      "words": [
+        {
+          "term": "Training",
+          "meaning": "Showing a model many examples so it can adjust itself and get better."
+        },
+        {
+          "term": "Guess and check",
+          "meaning": "Predict, compare with the real answer, adjust. The core loop of learning."
+        },
+        {
+          "term": "Narrow AI",
+          "meaning": "AI that is good at one job and useless outside it. All AI today is narrow."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "What are the three steps of training?",
+          "options": [
+            "Guess, check, adjust",
+            "Read, write, delete",
+            "Ask, wait, stop",
+            "Copy, paste, save"
+          ],
+          "answer": 0,
+          "why": "The model predicts, sees the real answer, then shifts itself slightly towards it. Millions of rounds later it is accurate."
+        },
+        {
+          "q": "An AI trained only on sunny dog photos will probably...",
+          "options": [
+            "Work perfectly at night too",
+            "Struggle with dogs at night",
+            "Turn into a cat detector",
+            "Refuse to answer"
+          ],
+          "answer": 1,
+          "why": "It learned one narrow pattern. Change the conditions and the pattern no longer matches."
+        },
+        {
+          "q": "Why can AI sound confident and still be wrong?",
+          "options": [
+            "It is lying on purpose",
+            "It has no way to tell right from wrong, only what looks likely",
+            "It runs out of battery",
+            "It is too slow"
+          ],
+          "answer": 1,
+          "why": "Confidence is not the same as correctness. The model produces the most likely-sounding answer, not a verified one."
+        }
+      ]
+    },
+    {
+      "id": "data",
+      "n": 3,
+      "title": "Data is the food",
+      "emoji": "🍲",
+      "minutes": 5,
+      "bigIdea": "What goes in decides what comes out. Bad examples make a bad model.",
+      "body": [
+        "Data is the examples you feed a model. It is photos, words, numbers, sounds. Without data there is nothing to learn from.",
+        "If the data is messy, the model is messy. If the data only shows one kind of person, the model only works well for that kind of person. This is the famous rule: garbage in, garbage out.",
+        "There is a second problem. More data is not always better if it repeats the same mistake. A million examples of the same wrong thing teach the model the wrong thing a million times.",
+        "This is why people who build AI spend most of their time on data, not on code. Cleaning it, checking it, and asking who is missing from it matters more than anything else."
+      ],
+      "words": [
+        {
+          "term": "Data",
+          "meaning": "The examples a model learns from — pictures, text, numbers, sound."
+        },
+        {
+          "term": "Garbage in, garbage out",
+          "meaning": "Bad examples produce bad results, no matter how good the model is."
+        },
+        {
+          "term": "Bias",
+          "meaning": "A skew in the data that makes the model unfair to some people or situations."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "What is data in AI?",
+          "options": [
+            "The examples the model learns from",
+            "The electricity that runs it",
+            "The screen you see",
+            "The name of the model"
+          ],
+          "answer": 0,
+          "why": "Data is the raw material — photos, text, numbers. The model is built out of patterns found in it."
+        },
+        {
+          "q": "A face-recognition model trained only on one skin tone will...",
+          "options": [
+            "Work for everyone equally",
+            "Work badly for other skin tones",
+            "Become a better model",
+            "Learn on its own"
+          ],
+          "answer": 1,
+          "why": "It only learned one narrow pattern. Everyone outside that pattern gets worse results. That is bias."
+        },
+        {
+          "q": "\"Garbage in, garbage out\" means...",
+          "options": [
+            "Bad data gives bad results",
+            "You should delete old files",
+            "AI produces rubbish",
+            "Computers need cleaning"
+          ],
+          "answer": 0,
+          "why": "The output can never be better than the examples it learned from."
+        }
+      ]
+    },
+    {
+      "id": "when-wrong",
+      "n": 4,
+      "title": "When AI gets it wrong",
+      "emoji": "🙃",
+      "minutes": 6,
+      "bigIdea": "AI makes mistakes that look exactly like answers. Always check.",
+      "body": [
+        "Chatbots sometimes invent facts that sound perfect. Real names, real dates, a confident sentence — and none of it is true. This is called a hallucination.",
+        "It happens because the model is built to produce what sounds likely, not what is true. A believable sentence and a correct sentence look the same to it.",
+        "There is another kind of wrong. If the data was unfair, the model's answers will be unfair too, quietly and consistently. It will not announce it.",
+        "The rule for anything important: check it somewhere else. Two sources beat one confident machine. If you cannot check it, do not repeat it."
+      ],
+      "words": [
+        {
+          "term": "Hallucination",
+          "meaning": "When an AI invents something false but states it as if it were true."
+        },
+        {
+          "term": "Fact-check",
+          "meaning": "To look for the same fact in a second, trustworthy place."
+        },
+        {
+          "term": "Source",
+          "meaning": "Where a fact came from. A good source can be checked by someone else."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "What is an AI hallucination?",
+          "options": [
+            "A false answer stated confidently",
+            "A dream the AI has",
+            "A broken screen",
+            "A very fast answer"
+          ],
+          "answer": 0,
+          "why": "The model invents plausible details. It has no internal check that the detail is real."
+        },
+        {
+          "q": "You ask for a fact for your homework. What should you do?",
+          "options": [
+            "Copy it straight away",
+            "Check it in a book or trusted website",
+            "Ask the same AI again and trust it",
+            "Ignore homework"
+          ],
+          "answer": 1,
+          "why": "Asking the same model again often repeats the same mistake. An independent source is what actually verifies it."
+        },
+        {
+          "q": "Why does AI make unfair mistakes?",
+          "options": [
+            "It is angry",
+            "Its training data was unfair",
+            "It is too old",
+            "It is offline"
+          ],
+          "answer": 1,
+          "why": "The model copies the skew in its examples. Unfair data produces unfair answers, quietly."
+        }
+      ]
+    },
+    {
+      "id": "safety",
+      "n": 5,
+      "title": "Staying safe with AI",
+      "emoji": "🛡️",
+      "minutes": 6,
+      "bigIdea": "Treat a chatbot like a stranger online. Share nothing private.",
+      "body": [
+        "Anything you type into a chatbot can be stored, read, or used to train the next model. It is not a private diary.",
+        "Never type your full name, home address, school name, phone number, passwords, or photos of yourself or your family. Not even if the chatbot asks nicely or says it needs them to help.",
+        "If a chatbot asks for something private, or says something that frightens or upsets you, stop and tell a trusted adult. That is not a failure. That is exactly the right move.",
+        "And remember: a chatbot is not a friend, a doctor, or a teacher. It is a tool. Real help for real problems comes from real people."
+      ],
+      "words": [
+        {
+          "term": "Private information",
+          "meaning": "Your full name, address, school, phone number, passwords, and photos of you."
+        },
+        {
+          "term": "Trusted adult",
+          "meaning": "A parent, guardian, or teacher you can tell anything to."
+        },
+        {
+          "term": "Tool",
+          "meaning": "Something you use to do a job. It is not a person and it does not care about you."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Which of these is safe to type into a chatbot?",
+          "options": [
+            "Your home address",
+            "Your school name",
+            "A maths question",
+            "Your password"
+          ],
+          "answer": 2,
+          "why": "A maths question gives away nothing about you. The other three identify you or let someone reach you."
+        },
+        {
+          "q": "A chatbot asks for your phone number to \"help better\". You should...",
+          "options": [
+            "Give it",
+            "Refuse and tell an adult",
+            "Give half of it",
+            "Ask it to guess"
+          ],
+          "answer": 1,
+          "why": "No legitimate helper needs your number. Refusing and telling an adult is the safe response."
+        },
+        {
+          "q": "What is a chatbot?",
+          "options": [
+            "A friend",
+            "A tool",
+            "A teacher",
+            "A doctor"
+          ],
+          "answer": 1,
+          "why": "It is a tool. It does not know you, cannot care about you, and can be wrong."
+        }
+      ]
+    },
+    {
+      "id": "be-the-director",
+      "n": 6,
+      "title": "Be the director",
+      "emoji": "🎬",
+      "minutes": 7,
+      "bigIdea": "You drive. AI assists. Clear instructions get better results.",
+      "body": [
+        "The words you give an AI are called a prompt. A vague prompt gets a vague answer. A clear one gets something you can actually use.",
+        "Compare \"tell me about volcanoes\" with \"explain in five short sentences why a volcano erupts, for a ten-year-old, using a bottle of soda as the example\". The second one tells the AI who it is talking to, how long, and what picture to use.",
+        "Good prompts usually name four things: the job, the audience, the length, and the format. Add what to avoid, and you get closer still.",
+        "But the real skill is knowing when not to use AI at all. If you are learning to add fractions, letting AI do it steals the learning from you. Use it to explain, to quiz you, to check your work — not to replace your thinking."
+      ],
+      "words": [
+        {
+          "term": "Prompt",
+          "meaning": "The instructions you give an AI. Clear prompts get better answers."
+        },
+        {
+          "term": "Audience",
+          "meaning": "Who the answer is for. A ten-year-old needs different words than an adult."
+        },
+        {
+          "term": "Format",
+          "meaning": "The shape of the answer — a list, a table, five sentences, a story."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Which prompt will get the most useful answer?",
+          "options": [
+            "Tell me about space",
+            "Explain gravity in three sentences for a 9-year-old, using a dropped ball",
+            "Space stuff please",
+            "Gravity"
+          ],
+          "answer": 1,
+          "why": "It names the job, the length, the audience, and the example. Everything else leaves the AI guessing."
+        },
+        {
+          "q": "Four things a good prompt names are...",
+          "options": [
+            "Job, audience, length, format",
+            "Name, age, school, phone",
+            "Colour, size, shape, taste",
+            "Day, month, year, time"
+          ],
+          "answer": 0,
+          "why": "Those four remove almost all the ambiguity about what you actually want."
+        },
+        {
+          "q": "When should you NOT use AI?",
+          "options": [
+            "To quiz yourself",
+            "To explain a hard word",
+            "To do the practice that is meant to teach you",
+            "To check your spelling"
+          ],
+          "answer": 2,
+          "why": "If the point is to learn the skill, handing it over removes the learning. Use AI around the practice, not instead of it."
+        },
+        {
+          "q": "AI gives you an answer that sounds great. What is the last step?",
+          "options": [
+            "Submit it as it is",
+            "Check it against something you trust",
+            "Rewrite it in your own words and skip checking",
+            "Ask the same AI again"
+          ],
+          "answer": 1,
+          "why": "Rewording does not make a claim true. An independent source is the only thing that actually checks it."
+        }
+      ]
+    }
+  ]
+}

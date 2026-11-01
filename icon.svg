@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Sleek Kids">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff5d45"/>
+      <stop offset="0.55" stop-color="#ff8a3d"/>
+      <stop offset="1" stop-color="#ffc53d"/>
+    </linearGradient>
+    <clipPath id="beaker">
+      <path d="M196 128v150a60 60 0 0 0 60 60h0a60 60 0 0 0 60-60V128z"/>
+    </clipPath>
+  </defs>
+
+  <rect width="512" height="512" rx="116" fill="url(#bg)"/>
+
+  <!-- beaker -->
+  <g fill="none" stroke="#fff" stroke-width="26" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M196 128v150a60 60 0 0 0 60 60a60 60 0 0 0 60-60V128"/>
+    <path d="M170 128h172"/>
+  </g>
+
+  <!-- liquid -->
+  <g clip-path="url(#beaker)">
+    <rect x="180" y="252" width="152" height="120" fill="#fff" opacity="0.92"/>
+    <circle cx="230" cy="290" r="13" fill="#ff5d45" opacity="0.55"/>
+    <circle cx="282" cy="316" r="9" fill="#ff8a3d" opacity="0.6"/>
+    <circle cx="252" cy="336" r="6" fill="#ff5d45" opacity="0.45"/>
+  </g>
+
+  <!-- bubbles escaping -->
+  <circle cx="356" cy="104" r="15" fill="#fff" opacity="0.9"/>
+  <circle cx="396" cy="62" r="9" fill="#fff" opacity="0.7"/>
+  <circle cx="322" cy="48" r="6" fill="#fff" opacity="0.55"/>
+</svg>
